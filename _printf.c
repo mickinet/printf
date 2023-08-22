@@ -2,7 +2,7 @@
 void print_buffer(char buffer[], int *buff_inde);
 
 /**
- * _printf – Function for the printf
+ * _printf - Function that selects the correct function to print.
  * @format: format.
  * Return: Printed chars.
  */
@@ -22,9 +22,9 @@ int _printf(const char *format, ...)
 	{
 		if (format[p] != '%')
 		{
-			buffer[buff_inde++] = format[p];
-			if (buff_inde == BUFF_SIZE)
-				print_buffer(buffer, &buff_inde);
+			buffer[buff_ind++] = format[p];
+			if (buff_ind == BUFF_SIZE)
+				print_buffer(buffer, &buff_ind);
 			/* write(1, &format[p], 1); */
 			printed_chars++;
 		}
