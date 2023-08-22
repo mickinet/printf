@@ -2,7 +2,7 @@
 void print_buffer(char buffer[], int *buff_inde);
 
 /**
- * _printf - Function that selects the correct function to print.
+ * _printf – Function that selects the correct function to print.
  * @format: format.
  * Return: Printed chars.
  */
