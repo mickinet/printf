@@ -22,9 +22,9 @@ int _printf(const char *format, ...)
 	{
 		if (format[p] != '%')
 		{
-			buffer[buff_ind++] = format[p];
-			if (buff_ind == BUFF_SIZE)
-				print_buffer(buffer, &buff_ind);
+			buffer[buff_inde++] = format[p];
+			if (buff_inde == BUFF_SIZE)
+				print_buffer(buffer, &buff_inde);
 			/* write(1, &format[p], 1); */
 			printed_chars++;
 		}

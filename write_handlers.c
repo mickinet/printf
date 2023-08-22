@@ -178,7 +178,7 @@ int write_unsgnd(int is_negative, int ind,
 	if (width > length)
 	{
 		for (v = 0; v < width - length; v++)
-			buffer[i] = padd;
+			buffer[v] = padd;
 
 		buffer[v] = '\0';
 
